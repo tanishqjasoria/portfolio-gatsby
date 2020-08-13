@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/portfolio-gatbsy",
   siteMetadata: {
     title: `Tanishq Jasoria`,
     subtitle: `Manners Maketh Man`,
