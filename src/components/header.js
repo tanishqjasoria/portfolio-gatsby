@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Content = styled.div`
-  max-width: 860px;
+  max-width: 100vw;
   padding: 1rem 1.0875rem;
   font-size: 1.2rem;
 `
@@ -15,13 +15,14 @@ const NavLink = styled(Link)`
   text-decoration: none;
   display: inline-block;
   position: relative;
+  font-size: 16px;
 
   ::after {
     content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 1px;
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
@@ -41,13 +42,14 @@ const GitHubLink = styled.a`
   text-decoration: none;
   display: inline-block;
   position: relative;
+  font-size: 16px;
 
   ::after {
     content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 1px;
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
@@ -68,17 +70,19 @@ const HomeLink = styled(NavLink)`
 const SiteHeader = styled.header`
   background: transparent;
   display: flex;
+  float: right;
   align-content: center;
   justify-content: center;
 `
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <SiteHeader>
     <Content>
       <p>
-        <HomeLink to="/">{siteTitle}</HomeLink>
-        <NavLink to="/blog">Blog</NavLink>
-        <GitHubLink href="https://github.com/niklasmtj/gatsby-starter-julia">
+        <HomeLink to="/">← Home</HomeLink>
+        <NavLink to="/blog">About</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <GitHubLink href="https://github.com/tanishqjasoria">
           GitHub
         </GitHubLink>
       </p>
