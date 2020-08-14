@@ -9,7 +9,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Name />
-    <AboutMe/>
+    <AboutMe />
   </Layout>
 )
 

@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-
 const Container = styled.div`
   padding-top: 4rem;
   padding-bottom: 1rem;
@@ -12,8 +11,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-`;
-
+`
 
 // const IntroColumn1 = styled.div`
 //   width: 50%;
@@ -40,4 +38,3 @@ const AboutMe = () => (
 )
 
 export default AboutMe
-

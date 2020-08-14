@@ -81,9 +81,7 @@ const Header = () => (
         <HomeLink to="/">← Home</HomeLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/projects">Projects</NavLink>
-        <GitHubLink href="https://github.com/tanishqjasoria">
-          GitHub
-        </GitHubLink>
+        <GitHubLink href="https://github.com/tanishqjasoria">GitHub</GitHubLink>
       </p>
     </Content>
   </SiteHeader>

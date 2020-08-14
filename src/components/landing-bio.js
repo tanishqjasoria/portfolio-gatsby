@@ -38,7 +38,7 @@ const IconCont = styled.a`
   height: 30px;
   width: 35px;
   transition: all ease-in-out 0.2s;
-  
+
   :hover::before {
     opacity: 1;
     transform: translate3d(0, 0, 0);
@@ -59,7 +59,8 @@ const IconCont = styled.a`
     height: 28px;
     line-height: 22px;
     opacity: 0;
-    transition: opacity 150ms linear, transform 150ms linear, -webkit-transform 150ms linear;
+    transition: opacity 150ms linear, transform 150ms linear,
+      -webkit-transform 150ms linear;
     transform: translate3d(0, -8px, 0);
     z-index: 99;
   }
@@ -74,7 +75,8 @@ const IconCont = styled.a`
     border-right: 5px solid transparent;
     border-bottom: 6px solid #222;
     opacity: 0;
-    transition: opacity 150ms linear, transform 150ms linear, -webkit-transform 150ms linear;
+    transition: opacity 150ms linear, transform 150ms linear,
+      -webkit-transform 150ms linear;
     transform: translate3d(0, -8px, 0);
     z-index: 100;
   }
@@ -100,15 +102,15 @@ const LandingBio = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <OuterContainer>
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>{data.site.siteMetadata.subtitle}</Description>
           <SocialLinks>
-            {SOCIAL_LINKS.map( ({url, text, Icon}) => (
+            {SOCIAL_LINKS.map(({ url, text, Icon }) => (
               <IconCont data-title={text} href={url} target="_blank">
-                <Icon size={32}/>
+                <Icon size={32} />
               </IconCont>
             ))}
           </SocialLinks>

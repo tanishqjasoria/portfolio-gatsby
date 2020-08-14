@@ -2,7 +2,6 @@ import React from "react"
 import styled from "@emotion/styled"
 import { SOCIAL_LINKS } from "../constants"
 
-
 const Container = styled.div`
   padding-top: 4rem;
   padding-bottom: 1rem;
@@ -13,7 +12,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-`;
+`
 
 const IntroColumn1 = styled.div`
   width: 50%;
@@ -48,7 +47,7 @@ const IconCont = styled.a`
   height: 30px;
   width: 35px;
   transition: all ease-in-out 0.2s;
-  
+
   :hover::before {
     opacity: 1;
     transform: translate3d(0, 0, 0);
@@ -69,7 +68,8 @@ const IconCont = styled.a`
     height: 28px;
     line-height: 22px;
     opacity: 0;
-    transition: opacity 150ms linear, transform 150ms linear, -webkit-transform 150ms linear;
+    transition: opacity 150ms linear, transform 150ms linear,
+      -webkit-transform 150ms linear;
     transform: translate3d(0, -8px, 0);
     z-index: 99;
   }
@@ -84,7 +84,8 @@ const IconCont = styled.a`
     border-right: 5px solid transparent;
     border-bottom: 6px solid #222;
     opacity: 0;
-    transition: opacity 150ms linear, transform 150ms linear, -webkit-transform 150ms linear;
+    transition: opacity 150ms linear, transform 150ms linear,
+      -webkit-transform 150ms linear;
     transform: translate3d(0, -8px, 0);
     z-index: 100;
   }
@@ -105,9 +106,9 @@ const Name = () => (
       <Description>Senior Undergraduate, Department of Mathematics</Description>
     </IntroColumn1>
     <IntroColumn2>
-      {SOCIAL_LINKS.map( ({url, text, Icon}) => (
+      {SOCIAL_LINKS.map(({ url, text, Icon }) => (
         <IconCont data-title={text} href={url} target="_blank">
-          <Icon size={32}/>
+          <Icon size={32} />
         </IconCont>
       ))}
     </IntroColumn2>
