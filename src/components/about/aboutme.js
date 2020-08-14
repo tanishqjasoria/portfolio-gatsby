@@ -33,7 +33,6 @@ const Description = styled.p`
 const AboutMe = () => (
   <Container>
     <Description>About Me</Description>
-    <Break />
   </Container>
 )
 
