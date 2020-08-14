@@ -79,7 +79,7 @@ const Header = () => (
     <Content>
       <p>
         <HomeLink to="/">← Home</HomeLink>
-        <NavLink to="/blog">About</NavLink>
+        <NavLink to="/about">About</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <GitHubLink href="https://github.com/tanishqjasoria">
           GitHub
