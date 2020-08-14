@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Content = styled.div`
-  max-width: 100vw;
+  // max-width: 100vw;
   padding: 1rem 1.0875rem;
   font-size: 1.2rem;
 `
@@ -70,9 +70,8 @@ const HomeLink = styled(NavLink)`
 const SiteHeader = styled.header`
   background: transparent;
   display: flex;
-  float: right;
   align-content: center;
-  justify-content: center;
+  justify-content: flex-end;
 `
 
 const Header = () => (

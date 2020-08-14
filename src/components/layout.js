@@ -27,7 +27,6 @@ const GatsbyLink = styled.a`
 const Footer = styled.footer`
   display: flex;
   justify-content: center;
-  height: 5vh;
 `
 
 const Layout = ({ children }) => (
