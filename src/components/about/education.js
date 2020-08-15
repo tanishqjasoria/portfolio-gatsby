@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { graphql, StaticQuery } from "gatsby"
 
 const Container = styled.div`
   padding-bottom: 1.5rem;
@@ -40,16 +41,25 @@ const Date = styled.div`
 // `
 
 const Education = () => (
-  <Container>
-    <Heading>Indian Institue of Technology Kharagpur</Heading>
-    <SubHeading>
-      <Position>
-        Integrated Master of Science (MSc), Mathematics and Computing | CGPA –
-        7.34
-      </Position>
-      <Date>2016-2021</Date>
-    </SubHeading>
-  </Container>
+  <StaticQuery
+    query={graphql`
+      query EducationQuery {
+        resume {
+          education {
+            endDate
+            startDate
+            area
+            studyType
+            institution
+          }
+        }
+      }
+    `}
+    render={(data) => (
+      <Container>
+      </Container>
+    )}
+  />
 )
 
 export default Education

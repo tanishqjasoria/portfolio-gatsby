@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { graphql, StaticQuery } from "gatsby"
 
 const Container = styled.div`
   padding-bottom: 1.5rem;
@@ -11,9 +12,25 @@ const Container = styled.div`
 `
 
 const Leadership = () => (
-  <Container>
-    THIS IS LEADERSHIP
-  </Container>
+  <StaticQuery
+    query={graphql`
+      query LeadershipQuery {
+        resume {
+          volunteer {
+            organization
+            position
+            startDate
+            endDate
+            summary
+          }
+        }
+      }
+    `}
+    render={(data) => (
+      <Container>
+      </Container>
+    )}
+  />
 )
 
 export default Leadership

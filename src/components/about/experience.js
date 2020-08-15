@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { graphql, StaticQuery } from "gatsby"
 
 const Container = styled.div`
   padding-bottom: 1.5rem;
@@ -53,30 +54,29 @@ const Areas = styled.h1`
 `
 
 const Experience = () => (
-  <Container>
-    <Heading>
-      <a href="https://ssl.engineering.nyu.edu/" target="_black">
-        Secure Systems Lab, New York University
-      </a>
-    </Heading>
-    <SubHeading>
-      <Position>Associate Research Scientist</Position>
-      <Date>May 2019 - July 2019</Date>
-    </SubHeading>
-    <Description>
-      Performed vulnerability assessment of Uptane by carrying out various
-      cyber-attacks in a simulated environment Prevented rollback and hardware
-      mismatch attacks on Uptane, in case of a compromised software repository
-      Encrypted the updates, delivered using Uptane, by implementing hybrid
-      end-to-end encryption (RSA2048 + AES128) Added the support to externally
-      sign a repository metadata in TUF using hardware security tokens
-      (PIV/CCID)
-    </Description>
-    <Areas>
-      Areas: Python, Secure Software Development, Encryption, Public Key
-      Infrastructure, Systems Security
-    </Areas>
-  </Container>
+  <StaticQuery
+    query={graphql`
+      query ExperienceQuery {
+        resume {
+          work {
+            website
+            company
+            pinned
+            location
+            position
+            startDate
+            endDate
+            areas
+            highlights
+          }
+        }
+      }
+    `}
+    render={(data) => (
+      <Container>
+      </Container>
+    )}
+  />
 )
 
 export default Experience

@@ -35,7 +35,7 @@ const Description = styled.div`
 const AboutMe = () => (
   <StaticQuery
     query={graphql`
-      query ResumeQuery {
+      query AboutQuery {
         resume {
           basics {
             summary
