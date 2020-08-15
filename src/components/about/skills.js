@@ -14,7 +14,7 @@ const Container = styled.div`
 const Skills = () => (
   <StaticQuery
     query={graphql`
-      query ExperienceQuery {
+      query SkillsQuery {
         resume {
           skills {
             name
