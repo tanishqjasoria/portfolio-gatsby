@@ -20,11 +20,13 @@ const Link = styled.div`
 `
 
 const Page = styled.div`
-  width: 100vw;
+  // width: 100vw;
   height: 100vh;
   margin: 0;
   padding 0;
   borders 0;
+  background-color: black;
+  color: white;
 `
 
 const Heading = styled.div`
@@ -56,41 +58,41 @@ const IndexPage = () => (
       <LandingBio />
     </Page>
 
-    <Link id="about-me"></Link>
-    <Section>
-      <Heading>ABOUT ME</Heading>
-      <AboutMe />
-    </Section>
+    {/*<Link id="about-me"></Link>*/}
+    {/*<Section>*/}
+    {/*  <Heading>ABOUT ME</Heading>*/}
+    {/*  <AboutMe />*/}
+    {/*</Section>*/}
 
-    <Link id="skills"></Link>
-    <Section>
-      <Heading>SKILLS</Heading>
-      <Skills />
-    </Section>
+    {/*<Link id="skills"></Link>*/}
+    {/*<Section>*/}
+    {/*  <Heading>SKILLS</Heading>*/}
+    {/*  <Skills />*/}
+    {/*</Section>*/}
 
-    <Link id="education"></Link>
-    <Section>
-      <Heading>EDUCATION</Heading>
-      <Education />
-    </Section>
+    {/*<Link id="education"></Link>*/}
+    {/*<Section>*/}
+    {/*  <Heading>EDUCATION</Heading>*/}
+    {/*  <Education />*/}
+    {/*</Section>*/}
 
-    <Link id="experience"></Link>
-    <Section>
-      <Heading>EXPERIENCE</Heading>
-      <Experience />
-    </Section>
+    {/*<Link id="experience"></Link>*/}
+    {/*<Section>*/}
+    {/*  <Heading>EXPERIENCE</Heading>*/}
+    {/*  <Experience />*/}
+    {/*</Section>*/}
 
-    <Link id="volunteer"></Link>
-    <Section>
-      <Heading>LEADERSHIP</Heading>
-      <Leadership />
-    </Section>
+    {/*<Link id="volunteer"></Link>*/}
+    {/*<Section>*/}
+    {/*  <Heading>LEADERSHIP</Heading>*/}
+    {/*  <Leadership />*/}
+    {/*</Section>*/}
 
-    <Link id="awards"></Link>
-    <Section>
-      <Heading>AWARDS</Heading>
-      <Awards />
-    </Section>
+    {/*<Link id="awards"></Link>*/}
+    {/*<Section>*/}
+    {/*  <Heading>AWARDS</Heading>*/}
+    {/*  <Awards />*/}
+    {/*</Section>*/}
 
   </Layout>
 )

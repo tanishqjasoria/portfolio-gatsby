@@ -10,7 +10,7 @@ const Content = styled.div`
 `
 
 const NavLink = styled(Link)`
-  color: black;
+  color: white;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -37,7 +37,7 @@ const NavLink = styled(Link)`
 `
 
 const GitHubLink = styled.a`
-  color: black;
+  color: white;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;

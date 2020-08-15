@@ -31,6 +31,7 @@ const SocialLinks = styled.div`
 `
 
 const IconCont = styled.a`
+  color: white;
   margin: 10px;
   text-decoration: none;
   position: relative;
@@ -54,8 +55,8 @@ const IconCont = styled.a`
     font-size: 13px;
     padding: 3px 10px;
     background: #222;
-    color: #fff;
-    border-radius: 2px;
+    color: white;
+    border-radius: 1px;
     height: 28px;
     line-height: 22px;
     opacity: 0;
