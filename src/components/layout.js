@@ -12,14 +12,12 @@ import styled from "@emotion/styled"
 import favicon from "../images/favicon.ico"
 import Helmet from "react-helmet"
 
-import Header from "./header"
 import "./layout.css"
 
 const Content = styled.div`
-  margin: 0 auto;
+  margin: 0;
   // max-width: 860px;
-  padding: 0 1.0875rem 1rem;
-  padding-top: 0;
+  padding: 0;
 `
 
 const GatsbyLink = styled.a`
@@ -47,7 +45,6 @@ const Layout = ({ children }) => (
         <Helmet>
           <link rel="icon" href={favicon} />
         </Helmet>
-        <Header />
         <Content>
           <main>{children}</main>
           <Footer>

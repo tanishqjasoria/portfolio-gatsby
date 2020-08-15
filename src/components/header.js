@@ -78,9 +78,10 @@ const Header = () => (
   <SiteHeader>
     <Content>
       <p>
-        <HomeLink to="/">← Home</HomeLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
+        <HomeLink on="/">← Home</HomeLink>
+        <NavLink to="#about-me">About</NavLink>
+        <NavLink to="#education">Education</NavLink>
+        <NavLink to="#experience">Experience</NavLink>
         <GitHubLink href="https://github.com/tanishqjasoria">GitHub</GitHubLink>
       </p>
     </Content>
@@ -96,3 +97,15 @@ Header.defaultProps = {
 }
 
 export default Header
+
+// Recommendations for programmatic, in-app navigation
+// Neither <Link> nor navigate can be used for in-route navigation with a hash or query parameter. If you need this behavior, you should either use an anchor tag or import the @reach/router package—which Gatsby already depends upon—to make use of its navigate function, like so:
+//
+//   Copycopy code to clipboard
+// import { navigate } from '@reach/router';
+// ...
+// onClick = () => {
+//   navigate('#some-link');
+//   // OR
+//   navigate('?foo=bar');
+// }

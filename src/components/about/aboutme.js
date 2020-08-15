@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { StaticQuery, graphql } from "gatsby"
 
 const Container = styled.div`
-  padding-top: 4rem;
   padding-bottom: 1rem;
   padding-left: 4rem;
   padding-right: 4rem;
@@ -22,18 +22,35 @@ const Container = styled.div`
 //   width: 50%;
 //   display: flex;
 //   justify-content: flex-end;
-// `
+//
 
-const Description = styled.p`
+const Description = styled.div`
   // padding-left: 1vh;
   margin-bottom: 1rem;
   font-size: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
 `
 
 const AboutMe = () => (
-  <Container>
-    <Description>About Me</Description>
-  </Container>
+  <StaticQuery
+    query={graphql`
+      query ResumeQuery {
+        resume {
+          basics {
+            summary
+          }
+        }
+      }
+    `}
+    render={(data) => (
+      <Container>
+        <Description>
+          {data.resume.basics.summary}
+        </Description>
+      </Container>
+    )}
+  />
 )
 
 export default AboutMe
