@@ -9,6 +9,53 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: "gatsby-source-apiserver",
+      options: {
+        url: `https://gist.githubusercontent.com/tanishqjasoria/0e89dca5982d06da7e998fdfe7751422/raw/f6f5a1fec2c9f031a2a00a233299344e124131e6/resume.json`,
+
+        method: "get",
+
+        headers: {
+          "Content-Type": "application/json"
+        },
+
+
+        // Optionally save the JSON data to a file locally
+        // Default is false
+        localSave: true,
+
+        //  Required folder path where the data should be saved if using localSave option
+        //  This folder must already exist
+        path: `${__dirname}/src/data/`,
+
+        // Optionally include some output when building
+        // Default is false
+        verboseOutput: true, // For debugging purposes
+
+
+        // Optionally re-source data when it changes and
+        // `gatsby develop` is running.
+        // Requires `ENABLE_GATSBY_REFRESH_ENDPOINT=true`.
+        // See https://www.gatsbyjs.org/docs/environment-variables/#reserved-environment-variables
+        // Default is false
+        enableDevRefresh: true,
+
+        // Pass an array containing any number of the entity configuration properties (except verbose, auth0Config),
+        // any not specified are defaulted to the general properties that are specified
+        // Only available from version 2.1.0
+        entitiesArray: [
+          {
+            url: `https://gist.githubusercontent.com/tanishqjasoria/0e89dca5982d06da7e998fdfe7751422/raw/f6f5a1fec2c9f031a2a00a233299344e124131e6/resume.json`,
+            method: "get",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            name: `resume`,
+          }
+        ]
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
