@@ -1,0 +1,249 @@
+{
+  "basics": {
+    "name": "Tanishq Jasoria",
+    "label": "Senior Undergraduate, Department of Mathematics",
+    "image": "",
+    "summary": "I am an inquisitive and curious person and am always excited about exploring the unknown, and this is why I have delved into seemingly diverse fields. I have worked on various projects involving myself in secure software development, systems security, robotics, deep learning and embedded systems. I believe in the current world scenario, having specialization in one niche field is not as rewarding as developing an appreciation and understanding for a melange of various inter-twined skills.",
+    "website": "http://tanishqjasoria.me",
+    "email": "jasoriatanishq@gmail.com",
+    "location": {
+      "city": "Kharagpur, WB",
+      "countryCode": "India"
+    },
+    "profiles": [
+      {
+        "username": "tanishqjasoria",
+        "url": "https://www.linkedin.com/in/tanishqjasoria/",
+        "network": "linkedin"
+      },
+      {
+        "url": "https://github.com/tanishqjasoria",
+        "username": "tanishqjaosria",
+        "network": "github"
+      }
+    ]
+  },
+  "education": [
+    {
+      "endDate": "2021",
+      "startDate": "2016",
+      "area": "Mathematics and Computing",
+      "studyType": "Integrated MS",
+      "institution": "Indian Institute of Technology Kharagpur",
+      "courses": [
+        "Object Oriented Systems Design",
+        "Algorithms",
+        "Discrete Mathematics",
+        "Systems Programming",
+        "Computer Organization and Architecture",
+        "Cryptography and Network Security",
+        "Switching and Finite Automata",
+        "Operating Systems",
+        "Computer Networks",
+        "Reverse Engineering",
+        "Deep Learning",
+        "Reinforcement Learning"
+      ],
+      "mooc": [
+        "Operating Systems",
+        "Computer Networks",
+        "Deep Learning Specialization",
+        "Reinforcement Learning"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "keywords": [
+        "Python",
+        "C",
+        "C++",
+        "Java",
+        "Rust",
+        "x86 Assembly",
+        "Verilog",
+        "SQL",
+        "TensorFlow",
+        "Keras"
+      ],
+      "name": "Programming Languages"
+    },
+    {
+      "keywords": [
+        "Git",
+        "Linux Shell",
+        "Eagle",
+        "Xilinx ISE",
+        "LTSpice",
+        "Docker",
+        "Elastic Stack"
+      ],
+      "name": "Software/Scientific Tools"
+    },
+    {
+      "keywords": [
+        "AVR",
+        "ARM Cortex M4",
+        "ARM Cortex A7",
+        "ARM Cortex A8",
+        "Tensilica Xtensa",
+        "Xilinx Spartan 6"
+      ],
+      "name": "Hardware Programming"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Kishore Vaigyanik Protsahan Yojana (KVPY) Fellow",
+      "date": "2016",
+      "awarder": "DST, Government of India",
+      "summary": "Awarded a fellowship of INR 4.64 Lakhs ($6500)."
+    },
+    {
+      "title": "Campus Sustainability Challenge",
+      "date": "2018",
+      "awarder": "Inter-IIT Tech Meet 2018",
+      "summary": "Secured third position among 23 participating IITs at Inter-IIT Tech meet held at IIT Bombay."
+    },
+    {
+      "title": " National Standard Examination(s) in Physics and Chemistry (NSEP and NSEC)",
+      "date": "2015",
+      "awarder": "IAPT",
+      "summary": "Finished in top 1% in the state of Rajasthan."
+    },
+    {
+      "title": "Xilinx Innovation Challenge",
+      "date": "2019",
+      "awarder": "Xilinx",
+      "summary": "Progressed to the finals, being one of the top 16 teams."
+    },
+    {
+      "title": "IBM Blockchain Hackathon",
+      "date": "2018",
+      "awarder": "IBM",
+      "summary": "Progressed to the finals, being one of the top 20 teams, nationwide."
+    }
+  ],
+  "work": [
+    {
+      "website": "https://www.nus-singtel.nus.edu.sg/",
+      "company": "NUS-Singtel R&D Lab, National University of Singapore",
+      "pinned": true,
+      "location": "Singapore",
+      "position": "Research Intern - Threat Detection",
+      "startDate": "2020-05",
+      "highlights": [
+        "Developed a system to capture whole-system provenance using kernel audit data for the purpose of system audit.",
+        "Developing a system to detect an ongoing threat campaign using the whole-system provenance graph in real-time."
+      ],
+      "areas": [
+        "Python",
+        "Elastic Stack",
+        "Threat Detection",
+        "Provenance Graphs",
+        "Systems Security",
+        "Advanced Persistent Threats"
+      ]
+    },
+    {
+      "website": "https://mudrex.com/",
+      "company": "Mudrex",
+      "pinned": true,
+      "location": "Bengaluru",
+      "position": "Intern - Backend Developer",
+      "startDate": "2020-05",
+      "endDate": "2020-07",
+      "highlights": [
+        "Developed a cross-platform analytics engine, for application usage monitoring, using the ELK stack.",
+        "Reduced data latency by 80% using WebSocket connections to fetch OHLCV data from exchanges."
+      ],
+      "areas": [
+        "Python",
+        "JavaScript",
+        "Cryptocurrency",
+        "Encryption",
+        "Public Key Infrastructure",
+        "Systems Security"
+      ]
+    },
+    {
+      "website": "https://ssl.engineering.nyu.edu/",
+      "company": "Secure Systems Lab, New York University",
+      "pinned": true,
+      "location": "New York City",
+      "position": "Intern - Secure Software Development",
+      "startDate": "2019-05",
+      "endDate": "2019-07",
+      "highlights": [
+        "Prevented rollback and hardware mismatch attacks on Uptane, in case of a compromised software repository.",
+        "Encrypted the updates, delivered using Uptane, by implementing hybrid end-to-end encryption (RSA2048 + AES128).",
+        "Added the support to externally sign a repository metadata in TUF using hardware security tokens (PIV/CCID)."
+      ],
+      "areas": [
+        "Python",
+        "Secure Software Development",
+        "Encryption",
+        "Public Key Infrastructure",
+        "Systems Security"
+      ]
+    },
+    {
+      "highlights": [
+        "Developed the control architecture based on Finite State Machines for coordinated control of RoboCup SSL robots.",
+        "Implemented RTOS (ChibiOS) for scheduling of various tasks performed by central control board (STM32F407).",
+        "Spearheaded a team of 50 students to win a Silver Medal in technical challenges round at RoboCup 2018."
+      ],
+      "website": "http://www.krssg.in/",
+      "pinned": true,
+      "location": "Kharagpur",
+      "company": "Kharagpur Robosoccer Students' Group (KRSSG)",
+      "position": "Team Head, Embedded and Control Systems Team",
+      "startDate": "2017-02",
+      "endDate": "2020-02"
+    },
+    {
+      "highlights": [
+        "Developed a robotic exoskeleton to impart locomotive ability to assist the people with neurological disorders.",
+        "Designed a wearable device to record the gait-cycle, with a latency of 1.2 seconds, using nRF and Raspberry Pi."
+      ],
+      "pinned": true,
+      "website": "https://github.com/tanishqjasoria/RehabRobotics",
+      "location": "Kharagpur",
+      "company": "Rehabilitation Robotics",
+      "position": "Algorithm Designer and Hardware Developer",
+      "startDate": "2017-11",
+      "endDate": "2019-08"
+    },
+    {
+      "highlights": [
+        "Implemented a control system for Switched Reluctance Motor(SRM), increasing the torque gain by 230%.",
+        "Designed and fabricated a hardware unit to read the angular position of a SRM using axial mount magnetic encoders."
+      ],
+      "website": "http://aspenbower.com/",
+      "company": "Aspen Bower Electric Vehicles",
+      "location": "Kharagpur",
+      "position": "Intern - Power Train Engineer",
+      "startDate": "2018-03",
+      "endDate": "2018-04"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Space Technology Students' Society",
+      "position": "General Secretary",
+      "startDate": "2018-08",
+      "endDate": "2019-08",
+      "summary": "Undertook the responsibility for the administration and management of finances amounting to over 10 lakhs ($14000)"
+    },
+    {
+      "organization": "National Students' Space Challenge",
+      "position": "Events Head",
+      "startDate": "2018-05",
+      "endDate": "2019-05",
+      "summary": "Spearheaded a team of 15 Sub-Heads and 40 Junior-Coordinators to organize the eighth edition of India’s Largest Space Technology Festival, being responsible for the planning, design and publicity and execution of technical events in NSSC."
+    }
+  ],
+  "meta": {
+    "theme": "stackoverflow"
+  }
+}
