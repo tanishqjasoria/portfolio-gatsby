@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import FlickrHero from 'react-flickr-hero'
+// import FlickrHero from 'react-flickr-hero'
 import LandingBio from "../components/landing-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -51,9 +51,6 @@ const Heading = styled.div`
 const Section = styled.div`
   margin-top: 1rem;
   margin-bottom: 3rem;
-`
-
-const back = styled(FlickrHero)`
 `
 
 const StyledBack = styled(BackgroundSection)`

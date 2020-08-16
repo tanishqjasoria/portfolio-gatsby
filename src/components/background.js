@@ -1,11 +1,7 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
-import styled from "@emotion/styled"
 import BackgroundImage from 'gatsby-background-image'
 
-const Image = styled(BackgroundImage)`
- position: static;
-`
 
 const BackgroundSection = ({children}) => (
   <StaticQuery
