@@ -72,6 +72,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
+    'gatsby-background-image',
     {
       resolve: `gatsby-transformer-remark`,
       options: {

@@ -1,9 +1,10 @@
 import React from "react"
 import styled from "@emotion/styled"
-
+import FlickrHero from 'react-flickr-hero'
 import LandingBio from "../components/landing-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
 
 import Header from "../components/header"
 import AboutMe from "../components/about/aboutme"
@@ -12,6 +13,8 @@ import Experience from "../components/about/experience"
 import Leadership from "../components/about/leadership"
 import Awards from "../components/about/awards"
 import Skills from "../components/about/skills"
+
+import BackgroundSection from "../components/background"
 
 const Link = styled.div`
   visibility: hidden;
@@ -27,8 +30,17 @@ const Page = styled.div`
   borders 0;
   background-color: black;
   color: white;
+  position: relative;
+  overflow: hidden;
 `
 
+const SubPage = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+`
 const Heading = styled.div`
   margin-bottom: 3rem;
   margin-top: 1rem;
@@ -41,21 +53,33 @@ const Section = styled.div`
   margin-bottom: 3rem;
 `
 
-// const Image = styled.div`
-//   background: url(demhacked.png) no-repeat center center fixed;
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-// `
+const back = styled(FlickrHero)`
+`
+
+const StyledBack = styled(BackgroundSection)`
+
+`
 const IndexPage = () => (
 
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
     <Page>
-      <Header />
-      <LandingBio />
+
+      {/*<FlickrHero*/}
+      {/*  api_key="14d1ab3911a3b3ea1873d7b6c9269d08"*/}
+      {/*  // user_id="132343752@N06"*/}
+      {/*  // album_id="72157694825254121"*/}
+      {/*  searchTerm='niagara'*/}
+      {/*  limit={3}*/}
+      {/*  fillPage*/}
+      {/*/>*/}
+      <StyledBack>
+        <SubPage>
+          <Header />
+          <LandingBio />
+        </SubPage>
+      </StyledBack>
     </Page>
 
     {/*<Link id="about-me"></Link>*/}

@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import { SOCIAL_LINKS } from "./constants"
+import Typist from "react-typist"
 
 const Container = styled.div`
   text-align: center;
@@ -16,7 +17,7 @@ const OuterContainer = styled.div`
   height: 83vh;
 `
 
-const Description = styled.p`
+const Description = styled(Typist)`
   padding: 2vh;
   margin-bottom: 1rem;
   font-size: 1.4rem;
@@ -107,7 +108,10 @@ const LandingBio = () => (
       <OuterContainer>
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Description>{data.site.siteMetadata.subtitle}</Description>
+          <Description  key="Manners Maketh Man" cursor={{ show: false }}>
+            Manners Maketh Man
+            {/*<Typist.Backspace count={18} delay={300} />*/}
+          </Description>
           <SocialLinks>
             {SOCIAL_LINKS.map(({ url, text, Icon }) => (
               <IconCont data-title={text} href={url} target="_blank">
