@@ -83,7 +83,6 @@ const Header = () => (
         <NavLink to="#education">Education</NavLink>
         <NavLink to="#experience">Experience</NavLink>
         <ExternalLink href='/TanishqJasoriaCV.pdf'>Resume</ExternalLink>
-        <ExternalLink href="https://github.com/tanishqjasoria">GitHub</ExternalLink>
       </p>
     </Content>
   </SiteHeader>
