@@ -5,7 +5,6 @@ import LandingBio from "../components/landing-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-
 import Header from "../components/header"
 import AboutMe from "../components/about/aboutme"
 import Education from "../components/about/education"
@@ -53,16 +52,12 @@ const Section = styled.div`
   margin-bottom: 3rem;
 `
 
-const StyledBack = styled(BackgroundSection)`
-
-`
+const StyledBack = styled(BackgroundSection)``
 const IndexPage = () => (
-
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
     <Page>
-
       {/*<FlickrHero*/}
       {/*  api_key="14d1ab3911a3b3ea1873d7b6c9269d08"*/}
       {/*  // user_id="132343752@N06"*/}
@@ -114,7 +109,6 @@ const IndexPage = () => (
     {/*  <Heading>AWARDS</Heading>*/}
     {/*  <Awards />*/}
     {/*</Section>*/}
-
   </Layout>
 )
 

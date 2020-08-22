@@ -108,7 +108,7 @@ const LandingBio = () => (
       <OuterContainer>
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Description  key="Manners Maketh Man" cursor={{ show: false }}>
+          <Description key="Manners Maketh Man" cursor={{ show: false }}>
             Manners Maketh Man
             {/*<Typist.Backspace count={18} delay={300} />*/}
           </Description>

@@ -45,9 +45,7 @@ const AboutMe = () => (
     `}
     render={(data) => (
       <Container>
-        <Description>
-          {data.resume.basics.summary}
-        </Description>
+        <Description>{data.resume.basics.summary}</Description>
       </Container>
     )}
   />

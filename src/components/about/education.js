@@ -55,10 +55,7 @@ const Education = () => (
         }
       }
     `}
-    render={(data) => (
-      <Container>
-      </Container>
-    )}
+    render={(data) => <Container></Container>}
   />
 )
 
