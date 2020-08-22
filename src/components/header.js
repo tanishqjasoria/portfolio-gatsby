@@ -36,7 +36,7 @@ const NavLink = styled(Link)`
   }
 `
 
-const GitHubLink = styled.a`
+const ExternalLink = styled.a`
   color: white;
   margin-left: 15px;
   text-decoration: none;
@@ -82,7 +82,8 @@ const Header = () => (
         <NavLink to="#about-me">About</NavLink>
         <NavLink to="#education">Education</NavLink>
         <NavLink to="#experience">Experience</NavLink>
-        <GitHubLink href="https://github.com/tanishqjasoria">GitHub</GitHubLink>
+        <ExternalLink href='/TanishqJasoriaCV.pdf'>Resume</ExternalLink>
+        <ExternalLink href="https://github.com/tanishqjasoria">GitHub</ExternalLink>
       </p>
     </Content>
   </SiteHeader>
